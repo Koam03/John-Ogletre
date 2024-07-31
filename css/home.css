@@ -29,6 +29,7 @@ nav a:hover {
 .logo img {
     height: 150px;
     padding: 0px;
+    border: 1px;
 }
 .dropdown {
     position: relative;
