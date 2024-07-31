@@ -6,4 +6,5 @@ function loadNav() {
         navElement.innerHTML = data;
       });
   }
-  window.onload = loadNav;
+  
+  window.onload = loadNav;  
