@@ -29,7 +29,8 @@ nav a:hover {
 .logo img {
     height: 150px;
     padding: 0px;
-    border: 1px;
+    background-color: rgb(51, 51, 51);
+    opacity: 0.5;
 }
 .dropdown {
     position: relative;
