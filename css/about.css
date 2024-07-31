@@ -1,19 +1,80 @@
-body {font-family: sans-serif;}
-nav {background-color: #333; color: white; position: fixed; top: 0; left: 0; height: 100%; width: 250px; overflow-y: auto;}
-nav a {color: white; text-decoration: none; padding: 15px 20px; display: block;}
-nav a:hover {background-color: #555; color: white;}
-.logo {padding: 20px; text-align: center; background-color: #333; color: white;}
-.logo img {height: 99px; background-color: rgba(255, 255, 255, 0.5); padding: 0px;}
-.logo img:hover {background-color: rgba(255, 255, 255, 0.7);}
-.dropdown {position: relative;}
-.dropdown-content {display: none; position: static; background-color: black; width: calc(100% - 20px); box-shadow: none; padding: 10px;}
-.dropdown:hover .dropdown-content {display: block;}
-.about {background-color: gray; padding: 20px; margin-bottom: 10px; margin-left: 250px; color: white;}
-.about button {background-color: #333; color: white; padding: 10px 20px; border: none; cursor: pointer;}
-.about button:hover {background-color: #555;}
-footer {background-color: gray; padding: 20px; margin-left: 250px; color: white;}
-footer table {width: 100%; border-collapse: collapse;}
-footer td {padding: 10px;}
-footer p {margin: 0;}
-footer img {vertical-align: middle;}
-footer a {text-decoration: none; color: #333;}
+body {
+    font-family: sans-serif;
+}
+nav {
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    overflow-y: auto;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+nav a:hover {
+    background-color: #555;
+    color: white;
+}
+.logo {
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.logo img {
+    height: 150px;
+    padding: 0px;
+    background-color: rgb(51, 51, 51);
+    opacity: 1.0;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: static;
+    background-color: black;
+    width: calc(100% - 20px);
+    box-shadow: none;
+    padding: 10px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.about {
+    background-color: gray;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-left: 250px;
+    color: white;
+}
+.about button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.about button:hover {
+    background-color: #555;
+}
+footer {
+    background-color: gray;
+    padding: 20px;
+    margin-left: 250px;
+    color: white;
+}
+footer a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+footer img {
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+}
