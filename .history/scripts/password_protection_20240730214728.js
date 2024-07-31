@@ -1,6 +1,6 @@
 function checkPassword() {
   const passwordInput = document.getElementById("password");
-  const correctPasswordHash = "6122w";
+  const correctPasswordHash = "6122";
 
   // Assuming you have a hashing function available
   const hashedInputPassword = hashPassword(passwordInput.value);
