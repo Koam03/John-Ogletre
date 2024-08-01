@@ -53,30 +53,21 @@ nav a:hover {
 }
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-.image-grid a {
-    display: block;
-    position: relative;
-    text-align: center;
-}
-.image-grid img {
-    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Adjust gap as needed */
 }
 .image-overlay {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
     color: white;
-    padding: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-.image-grid a:hover .image-overlay {
-    opacity: 1;
+    padding: 5px 10px;
+  }
+img {
+    width: 100%;
+    height: auto;
+    position: relative;
 }
 footer {
     background-color: gray;
