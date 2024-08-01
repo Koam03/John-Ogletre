@@ -51,18 +51,22 @@ nav a:hover {
     margin-left: 250px;
     color: white;
 }
-.image-grid {
+.services img {
+    display: block;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
 }
-.topleft {
+.services .topleft {
     position: absolute;
     top: 8px;
-    left: 16px;
-}
-img {
-    height: 100%;
-    font-weight: auto;
-    opacity: 0.3;
+    left: 8px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 4px 8px;
+    border-radius: 5px;
 }
 footer {
     background-color: gray;
