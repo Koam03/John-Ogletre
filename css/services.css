@@ -51,23 +51,6 @@ nav a:hover {
     margin-left: 250px;
     color: white;
 }
-.services img {
-    display: block;
-    border: 1px solid white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative;
-}
-.services .topleft {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    color: white;
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 4px 8px;
-    border-radius: 5px;
-}
 footer {
     background-color: gray;
     padding: 20px;
