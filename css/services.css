@@ -53,8 +53,7 @@ nav a:hover {
 }
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr); /* Added for 2 rows */
+    grid-template-columns: repeat(3, 1fr); /* Create three columns */
     gap: 20px;
 }
 .image-item {
