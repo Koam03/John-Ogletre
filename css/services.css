@@ -52,14 +52,17 @@ nav a:hover {
     color: white;
 }
 .image-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px; /* Adjust gap as needed */
+    position: relative;
+}
+.topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
 }
 img {
-    width: 100%;
-    height: auto;
-    position: relative;
+    height: 100%;
+    font-weight: auto;
+    opacity: 0.3;
 }
 footer {
     background-color: gray;
