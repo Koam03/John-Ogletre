@@ -51,6 +51,26 @@ nav a:hover {
     margin-left: 250px;
     color: white;
 }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.grid-item {
+    position: relative;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.image-overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    color: white;
+    padding: 5px;
+}
 footer {
     background-color: gray;
     padding: 20px;
