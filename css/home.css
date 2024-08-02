@@ -1,15 +1,25 @@
 body {
     font-family: sans-serif;
-}
+    margin: 0;
+  }
 nav {
     background-color: #333;
     color: white;
     position: fixed;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 100vh;
     width: 250px;
     overflow-y: auto;
+    transition: width 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+    nav {
+      width: 0;
+    }
+}
+.nav-open {
+    width: 250px;
 }
 nav a {
     color: white;
@@ -27,8 +37,8 @@ nav a:hover {
     color: white;
 }
 .logo img {
-    height: 150px;
-    padding: 0px;
+    max-width: 100%;
+    height: auto;
 }
 .dropdown {
     position: relative;
@@ -44,128 +54,46 @@ nav a:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.introduction {
+.content {
+    margin-left: 250px;
+    transition: margin-left 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+    .content {
+      margin-left: 0;
+    }
+}
+.introduction, .about, .services, .projects, .music, .contact {
     background-color: gray;
     padding: 20px;
     margin-bottom: 10px;
-    margin-left: 250px;
     color: white;
 }
-.introduction button {
+.introduction button, .about button, .services button, .projects button, .music button, .contact button {
     background-color: #333;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
 }
-.introduction button:hover {
+.introduction button:hover, .about button:hover, .services button:hover, .projects button:hover, .music button:hover, .contact button:hover {
     background-color: #555;
 }
-.about {
-    background-color: gray;
-    padding: 20px;
-    margin-bottom: 10px;
-    margin-left: 250px;
-    color: white;
-}
-.about button {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-.about button:hover {
-    background-color: #555;
-}
-.services {
-    background-color: gray;
-    padding: 20px;
-    margin-bottom: 10px;
-    margin-left: 250px;
-    color: white;
-}
-.services button {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-.services button:hover {
-    background-color: #555;
-}
-.projects {
-    background-color: gray;
-    padding: 20px;
-    margin-bottom: 10px;
-    margin-left: 250px;
-    color: white;
-}
-.projects button {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-.projects button:hover {
-    background-color: #555;
-}
-.projects img {
-    width: 100%;
+.projects img, .music img {
+    max-width: 100%;
     height: auto;
-}
-.music {
-    background-color: gray;
-    padding: 20px;
-    margin-bottom: 10px;
-    margin-left: 250px;
-    color: white;
-}
-.music button {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-.music button:hover {
-    background-color: #555;
-}
-.music img {
-    width: 100%;
-    height: auto;
-}
-.contact {
-    background-color: gray;
-    padding: 20px;
-    margin-bottom: 10px;
-    margin-left: 250px;
-    color: white;
-}
-.contact button {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-.contact button:hover {
-    background-color: #555;
 }
 .contact form {
     margin-top: 20px;
 }
 .contact input, .contact textarea {
-    width: calc(100% - 20px);
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
 }
 footer {
     background-color: gray;
     padding: 20px;
-    margin-left: 250px;
     color: white;
 }
 footer a {
@@ -176,4 +104,4 @@ footer img {
     vertical-align: middle;
     width: 25px;
     height: 25px;
-}
+  }
