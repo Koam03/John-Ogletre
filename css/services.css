@@ -11,28 +11,71 @@ nav {
     width: 250px;
     overflow-y: auto;
 }
+@media (max-width: 767px) {
+    nav {
+        width: 100%;
+    }
+}
+
 nav a {
     color: white;
     text-decoration: none;
     padding: 15px 20px;
     display: block;
 }
+@media (max-width: 768px) {
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 15px 20px;
+        display: block;
+    }
+}
+
 nav a:hover {
     background-color: #555;
     color: white;
 }
+@media (min-width: 768px) {
+    nav a:hover {
+        background-color: #555;
+        color: white;
+    }
+}
+
 .logo {
     padding: 20px;
     text-align: center;
     color: white;
 }
+@media screen {
+    .logo {
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+}
+
 .logo img {
     height: 150px;
     padding: 0px;
 }
+@media (min-width: 768px) {
+    .logo img {
+        height: 150px;
+        padding: 0px;
+    }
+}
+
 .dropdown {
     position: relative;
 }
+@media screen {
+    .dropdown {
+        position: relative;
+    }
+}
+
 .dropdown-content {
     display: none;
     position: static;
@@ -41,9 +84,26 @@ nav a:hover {
     box-shadow: none;
     padding: 10px;
 }
+@media (min-width: 768px) {
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black;
+        width: calc(100% - 20px);
+        box-shadow: none;
+        padding: 10px;
+    }
+}
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
+@media screen {
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  }
+
 .services {
     background-color: gray;
     padding: 20px;
@@ -51,18 +111,49 @@ nav a:hover {
     margin-left: 250px;
     color: white;
 }
+@media (min-width: 768px) {
+    .services {
+        background-color: gray;
+        padding: 20px;
+        margin-bottom: 10px;
+        margin-left: 250px;
+        color: white;
+    }
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
+@media (min-width: 768px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+
 .grid-item {
     position: relative;
 }
+@media (min-width: 768px) {
+    .grid-item {
+      position: relative;
+    }
+  }
+
 img {
     width: 100%;
     height: auto;
 }
+@media (min-width: 768px) {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
 .image-overlay {
     position: absolute;
     top: 10px;
