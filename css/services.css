@@ -51,21 +51,6 @@ nav a:hover {
     margin-left: 250px;
     color: white;
 }
-.image-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px; /* Adjust gap as needed */
-  }
-.image-grid img {
-    width: 100%;
-    height: auto;
-}
-.image-grid p {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    border-radius: 1px solid white;
-}
 footer {
     background-color: gray;
     padding: 20px;
