@@ -1,0 +1,11 @@
+{
+    "text": "Some text content",
+    "content": "Main content",
+    "buttons": [
+        {"label": "Button 1", "link": "link1"},
+        {"label": "Button 2", "link": "link2"}
+    ],
+    "photos": ["photo1.jpg", "photo2.png"],
+    "videos": ["video1.mp4"],
+    "music": ["music1.mp3"]
+}
