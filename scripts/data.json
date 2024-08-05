@@ -2,13 +2,15 @@
     "pages": [
       {
         "id": 1,
-        "title": "Home Page",
-        "content": "Welcome to our website!"
+        "title": "Home",
+        "content": "Welcome to my website!",
+        "url": "/"
       },
       {
-        "id": 2,
-        "title": "About Us",
-        "content": "Learn more about our company."
+        "id": 1,
+        "title": "About Me",
+        "content": "Welcome to my website!",
+        "url": "/about"
       }
     ],
     "sections": [

@@ -26,7 +26,7 @@ fetch('data.json')
       searchResults.innerHTML = '';
       if (results.length > 0) {
         results.forEach(result => {
-          const resultDiv = document.createElement('div');
+          const resultDiv = document.createElement('section');
           resultDiv.textContent = result.title;
           searchResults.appendChild(resultDiv);
         });
